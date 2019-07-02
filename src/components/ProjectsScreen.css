@@ -1,0 +1,257 @@
+.project-style {
+  background-color: #eee;
+  height: auto;
+  padding-bottom: 3em;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 60px;
+  margin-top: 60px;
+  display: inline-block;
+  padding-bottom: 10px;
+  height: 55px;
+  margin-block-end: 0.5em;
+}
+
+.project-text:before {
+  content: "";
+  /* position: absolute; */
+  width: 76%;
+  height: 1px;
+  bottom: -6px;
+  left: 13%;
+  border-bottom: 2px solid #000;
+}
+
+.project-div{
+  background-color: #70b8b4;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-content {
+  /* grid-auto-columns: auto; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 59vw;
+  grid-gap: 2.5vw 5.5vw;
+  height: 80vh;
+  min-width: 600px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 800ms, visibility 800ms;
+}
+
+.project-logo{
+    width: 70%;
+    padding: 0.5em;
+
+}
+
+.project-name {
+  font-size: 2.2vw;
+  font-family: Courier New;
+  text-transform: uppercase;
+  width: 16vw;
+}
+
+.view-button{
+  background: transparent;
+  border: 2px solid white;
+  margin-top: 20px;
+  font-size: 1.6rem;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0px 7px 2px 7px;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.8px;
+  width: 55%;
+  cursor: pointer;
+  height: 12%;
+}
+
+.view-button:hover{
+  border: 2px solid  rgb(0, 156, 146);
+}
+
+.view-button:focus,
+.view-button:active:focus,
+.view-button.active:focus,
+.view-button.focus,
+.view-button:active.focus,
+.view-button.active.focus {
+  outline: none !important;
+}
+
+.project-backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0e100f42
+}
+
+.project-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  background-color: rgba(27, 31, 34, 0.85);
+    border-radius: 4px;
+  width: 50%;
+  outline: none;
+  padding: 20px;
+  /* margin-right: -50%; */
+  transform: translate(-50%, -50%);
+}
+.project-modal-content{
+  display: flex;
+  flex-direction: column;
+  width: 41vw;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: normal !important;
+}
+
+.project-modal-text{
+  font-size: 2.5em;
+  margin-block-start: 0;
+  margin-block-end: 0em;
+  font-weight: normal !important;
+}
+
+.project-modal-image{
+  width: 25%;
+}
+
+.tech-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 13vh;
+  padding: 0px 0px 0px 1vw;
+}
+.tech-stack-style{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+  z-index: 1000;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+.description{
+  font-size: 2vw
+}
+
+.descriptionText{
+  font-size: 1.1vw
+}
+
+.tech-stack-header{
+  margin-block-end: 0em;
+   font-size:2vw;
+}
+
+.loadingImage{
+  display:flex;
+  height:76vh;
+  justify-content:center;
+  width:100vw;
+}
+
+@media (max-width: 768px){
+  .project-content{
+    grid-template-columns: auto auto;
+    min-width: 90%;
+    width: 80vw;
+    grid-gap: 4.5vh 8.5vw;
+  }
+
+  .project-modal{
+    width: 80%;
+  }
+
+  .description {
+    font-size: 6vw;
+}
+.descriptionText {
+  font-size: 0.78rem;
+}
+.tech-stack-header {
+  margin-block-end: 0em;
+  font-size: 6vw;
+}
+.submit-button {
+  width: 36.1vw;
+  height: 4.1vh;
+}
+
+  .view-button {
+    background: transparent;
+    border: 2px solid white;
+    margin-top: 7px;
+    font-size: 4vw;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px 7px 2px 7px;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.8px;
+    width: 54%;
+    cursor: pointer;
+    height: 12%;
+}
+.project-div {
+  background-color: #70b8b4;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-name {
+  font-size: 4.2vw;
+  font-family: Courier New;
+  text-transform: uppercase;
+  width: 36vw;
+}
+
+.project-modal-content {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  justify-content: center;
+  align-items: center;
+  min-height: 49vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: normal !important;
+}
+
+.project-text{
+  font-size: 10vw;
+  margin-block-end: 1em;
+}
+
+
+}
