@@ -18,9 +18,62 @@ const about = (props)=>{
     ariaHideApp={false}
   >
     <article id="intro" className="active">
-    <h2 class="major">About</h2>
-    <span class="image main"><img src="../../assets/pic03.jpg" alt="" /></span>
-    <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+    <h3 className="major" style={{margin:'0 0 1rem 0', borderBottom:'none'}}>Who is Storm?</h3>
+
+    <div style={{display:'flex', flexDirection:'column',alignItems:'center'}}>
+    <h3 className="major" style={{margin:'0 0 1rem 0', fontSize:'large'}}>Fun Facts?</h3>
+    <p>I love the outdoors, I'm a big fan of football. My<br/>
+    Favorite color is yellow. I listen to rock music but<br/>
+    my idol is Eminem.</p>
+    </div>
+    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+    <h3 className="major" style={{margin:'0 0 1rem 0', fontSize:'large'}}>Skills and Traits?</h3>
+    {/* skill container */}
+    <div style={{display:'flex'}}>
+    <ul style={{display:'block', width:'100%', listStyle:'upper-roman'}}>
+      <li style={{width:'50%', float:'left'}}>Flexible</li>
+      <li style={{width:'50%', float:'right'}}>Problem Solver</li>
+      <li style={{width:'50%', float:'left'}}>Adaptable</li>
+      <li style={{width:'50%', float:'right'}}>Team Player</li>
+    </ul>
+    </div>
+    <div style={{display:'flex',width:'-webkit-fill-available', justifyContent:'space-between'}}>
+    {/* Front End Skills*/}
+    
+      <div>
+      <h4 className="major" style={{margin:'0 0 1rem 0', borderBottom:'none'}}>Front End</h4>
+      <ul>
+        <li>React</li>
+        <li>React Native</li>
+        <li>Redux</li>
+        <li>ES6 Javascript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+      </div>
+      <div>
+      <h4 className="major" style={{margin:'0 0 1rem 0', borderBottom:'none'}}>Back End</h4>
+      <ul>
+        <li>Solidity</li>
+        <li>Node</li>
+        <li>SocketIO</li>
+        <li>Firebase</li>
+        <li>SQL</li>       
+      </ul>
+      </div>
+      <div>
+      <h4 className="major" style={{margin:'0 0 1rem 0', borderBottom:'none'}}>Other</h4>
+      <ul>
+        <li>Photshop</li>
+        <li>AdobeXD</li>
+        <li>SCRUM</li>
+        <li>Typescript</li>
+        <li>NextJS</li>
+        <li>Typescript</li>       
+      </ul>
+      </div>
+     </div>
+    </div>
   </article>
 
   </Modal>

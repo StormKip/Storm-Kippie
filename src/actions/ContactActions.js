@@ -1,5 +1,5 @@
 import {
-  MESSAGE_CREATE,
+  MESSAGE_SEND,
   MESSAGE_UPDATE,
   MESSAGE_SEND_SUCCESS,
   MESSAGE_SEND_FAIL
@@ -22,9 +22,8 @@ export const messageReset = () => {
 };
 
 export const messageSubmit=({ name, email, message })=>{
-  console.log("successfully sent", name, email, message)
   return(dispatch)=>{
-    dispatch({type:MESSAGE_CREATE});
+    dispatch({type:MESSAGE_SEND});
     if ((name === "") || (email === "") ||(message === "")) {
       Swal.fire(
         'Error',

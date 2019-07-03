@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 import '../ProjectsScreen.css';
 import { connect } from 'react-redux';
 import { modalOpen, modalClose, messageUpdate, messageReset, messageSubmit } from '../../actions';
+import loading from './loading.svg';
 const contact = (props)=>{
   const { contact, name, email, message } = props
   const {modalClose, messageSubmit, messageUpdate, messageReset} = props
@@ -59,7 +60,7 @@ const contact = (props)=>{
         </div>
       </div>
       <ul class="actions">
-        <li><input type="submit" value="Send Message" class="primary"/></li>
+        <li><button type="submit" value={"Send Message"} class="primary">{props.loading ? <img src={loading} alt=""/>: 'Send Message'}</button></li>
         <li><input type="reset" value="Reset" onClick={()=>messageReset()}/></li>
       </ul>
     </form>
@@ -73,10 +74,11 @@ const contact = (props)=>{
   )
 }
 const mapStateToProps = state => {
+  
   const { contact } = state.modal;
-  const { name, email, message } = state.contactForm;
-
-  return { contact, name, email, message } ;
+  const { name, email, message, loading } = state.contactForm;
+  console.log(state.contactForm)
+  return { contact, name, email, message, loading } ;
 };
 
 export default connect(mapStateToProps,{

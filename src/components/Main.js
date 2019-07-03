@@ -5,14 +5,18 @@ import About from './About/About';
 import Portfolio from './Portfolio/Portfolio';
 import Contact from './Contact/Contact';
 import {modalOpen, modalClose} from '../actions';
+import { BrowserRouter } from 'react-router-dom';
+
 
 class Main extends Component{
 render() {
-  return([
-    <Header display={this.props.headerDisplay}/>,
-    <About/>,
-    <Portfolio/>,
-    <Contact/>]
+  return(
+    <BrowserRouter>
+    <Header display={this.props.headerDisplay}/>
+    <About/>
+    <Portfolio/>
+    <Contact/>
+    </BrowserRouter>
   );
 }
 }

@@ -18,8 +18,24 @@ const Portfolio = (props)=>{
   >
     <article id="portfolio">
     <h2 class="major">Portfolio</h2>
-    <span class="image main"><img src="../../assets/pic03.jpg" alt="" /></span>
-    <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+    <div style={{display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }}
+    >
+    <div className="logo" style={{display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }}>
+    <i class="fa fa-exclamation-circle" style={{fontSize:'5rem'}} aria-hidden="true"></i>
+    <h1>Error</h1>
+        </div>
+        <p>No Projects available currently! But don't worry. <br/>You can check out my Github in the mean time.</p>
+        <a href="https://github.com/StormKip" target="_blank" rel="noopener noreferrer" className="viewPortfolio" style={{ fontSize: '1.5rem' }}><span className="label">GitHub<i className="icon brands fa-github"/></span></a>
+    </div>
+    
   </article>
   </Modal>
   )

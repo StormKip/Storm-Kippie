@@ -124,7 +124,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 body{
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/bg.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('../images/bg.jpg');
   background-position: center top;
 }
 			html {
@@ -135,7 +135,7 @@ body{
 
 		@media screen and (max-width: 360px) {
       body{
-        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/bg.jpg');
+        background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('../images/bg.jpg');
         background-position: center top;
       }
 			html {
@@ -621,7 +621,6 @@ body{
 			line-height: 1;
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
 		}
 
 		.icon > .label {
@@ -1396,7 +1395,7 @@ body{
 			top: 0;
 			left: calc(50% - 1px);
 			width: 1px;
-			height: 100%;
+      height: 35%;
 			background: #ffffff;
 		}
 
@@ -1636,7 +1635,7 @@ body{
 
 		}
 
-/* Footer */
+Footer
 
 	#footer {
 		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
@@ -1671,4 +1670,24 @@ body{
 
 		body.is-preload #footer {
 			opacity: 0;
+    }
+
+    .viewPortfolio{
+        display: block;
+        min-width: 7.5rem;
+        height: 2.75rem;
+        line-height: 2.75rem;
+        padding: 0 1.25rem 0 1.45rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 0.8rem;
+        border-bottom: 0;
+        font-size: 1.5rem;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .viewPortfolio:hover {
+      border-bottom-color: white;
+      background-color: #50505087;
 		}
