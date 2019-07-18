@@ -5,4 +5,4 @@ import ContactReducer from './ContactReducer';
 export default combineReducers({
   modal: ModalChangeReducer,
   contactForm: ContactReducer
-})
+});

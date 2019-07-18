@@ -20,9 +20,9 @@ export default (state = INITAL_STATE, action) => {
     case MESSAGE_SEND:
       return { ...state, loading: true };
     case MESSAGE_SEND_SUCCESS:
-      return { ...state, ...INITAL_STATE }
+      return { ...state, ...INITAL_STATE };
     case MESSAGE_SEND_FAIL:
-      return { ...state, error: 'Error', loading: false }
+      return { ...state, error: 'Error', loading: false };
     default:
       return state;
   }
